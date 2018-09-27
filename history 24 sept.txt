@@ -1,0 +1,334 @@
+
+QAHAR@QAHAR MINGW64 /d/Batch 9
+$ git init
+Initialized empty Git repository in D:/Batch 9/.git/
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ ls
+'data diri.txt'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        data diri.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git add .
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   data diri.txt
+
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git commit -am "add new file"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'QAHAR@QAHAR.(none)')
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   data diri.txt
+
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git config --global user.email "kaharedden@yahoo.com"
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   data diri.txt
+
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git config --global user.email "kaharosvaldo"
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git config --global user.email "kaharedden@yahoo.com"
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git config --global user.name "kaharosvaldo"
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git commit -am "add new file"
+[master (root-commit) dfc443e] add new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 data diri.txt
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git remote add origin https://github.com/kaharosvaldo/coba-git.git
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git remote -v
+origin  https://github.com/kaharosvaldo/coba-git.git (fetch)
+origin  https://github.com/kaharosvaldo/coba-git.git (push)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': kaharovaldo
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://kaharovaldo@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/kaharosvaldo/coba-git.git/'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': kaharosvaldo
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 109.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/kaharosvaldo/coba-git/pull/new/master
+remote:
+To https://github.com/kaharosvaldo/coba-git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   data diri.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git commit -am "add profile"
+[master 3ab8cda] add profile
+ 1 file changed, 1 insertion(+)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git branch
+* master
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 263 bytes | 131.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kaharosvaldo/coba-git.git
+   dfc443e..3ab8cda  master -> master
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git push -u origin develop
+error: src refspec develop does not match any.
+error: failed to push some refs to 'https://github.com/kaharosvaldo/coba-git.git'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git push -u origin <develop>
+bash: syntax error near unexpected token `newline'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (master)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9
+$ git push u origin <develop>
+bash: syntax error near unexpected token `newline'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git status
+On branch develop
+nothing to commit, working tree clean
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git add qur'an.jpg
+>
+> d
+> clc
+>
+>
+>
+> git add qur'an.jpg
+
+d
+clc
+
+
+git status
+fatal: pathspec 'quran.jpg
+
+d
+clc
+
+
+
+git add quran.jpg' did not match any files
+bash: d: command not found
+bash: clc: command not found
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        qur'an.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git branch
+* develop
+  master
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ gitu push -u origin <develop>
+bash: syntax error near unexpected token `newline'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ gitu push -u origin develop
+bash: gitu: command not found
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ gitu push -u origin <develop>
+bash: syntax error near unexpected token `newline'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        qur'an.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git push -u origin
+fatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git push -u origin <develop>
+bash: syntax error near unexpected token `newline'
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        qur'an.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git branch
+* develop
+  master
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git add qur'an.jpg
+> ^C
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git add qur\'an.jpg
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git status
+On branch develop
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   qur'an.jpg
+
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git commit -m "add photo"
+[develop 74bad3d] add photo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 qur'an.jpg
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git status
+On branch develop
+nothing to commit, working tree clean
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git branch
+* develop
+  master
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$ git push -u origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.25 MiB | 85.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/kaharosvaldo/coba-git/pull/new/develop
+remote:
+To https://github.com/kaharosvaldo/coba-git.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+QAHAR@QAHAR MINGW64 /d/Batch 9 (develop)
+$
