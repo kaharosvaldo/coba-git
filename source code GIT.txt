@@ -1,0 +1,34 @@
+code ls untuk melihat isi folder
+
+ada 3 jenis warna status file/ada perubahan
+
+merah -> belum dimasukkan digit
+hijau -> sudah dimasukkan dan di commit (sudah fix)
+
+untuk memasukkan data yang berwarna merah seluruhnya ke github source codenya adalah git add .
+
+git remote -v 
+
+git add untuk menambahkan file sebelum dicommite
+
+git commit -m "messege nya" untuk commite file awal
+
+git commit -am "messege nya " untuk commite file yang sudah di awal
+
+git branch untuk melihat branch direporsity
+
+git push -u origin nama-branch untuk menambahkah branch baru ke github yang sudah ada di buat sebelumnya
+
+git push 
+
+git checkout -b nama_branch untuk membuat branch baru
+
+git clone <git-url> untuk mengembalikan folder yang terhapus dari github
+
+git checkout -b <nama-branch-baru> origin/nama-branch-di-remote untuk mengambil dari origin yang diserver
+
+git checkout nama_branc untuk berpindah dari satu branch ke branch yang lain
+
+git merge develop === untuk menggabungkan/mengambil file dari satu branc dengan branch yang lain
+
+git pull untuk sinkronisasi folder di laptop dengan server di branch
